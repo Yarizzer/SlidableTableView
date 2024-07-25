@@ -28,6 +28,15 @@
 		7184D18D2C5260870073BAF4 /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1812C5260870073BAF4 /* MainScenePresenterService.swift */; };
 		7184D18E2C5260870073BAF4 /* MainSceneViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1822C5260870073BAF4 /* MainSceneViewModelContract.swift */; };
 		7184D18F2C5260870073BAF4 /* MainSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7184D17E2C5260870073BAF4 /* MainSceneViewController.xib */; };
+		7184D1982C5266260073BAF4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1972C5266260073BAF4 /* NibLoadableView.swift */; };
+		7184D19C2C5266750073BAF4 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D19B2C5266750073BAF4 /* TableViewProvider.swift */; };
+		7184D19F2C526B9C0073BAF4 /* TableViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D19E2C526B9C0073BAF4 /* TableViewProviderType.swift */; };
+		7184D1A12C526BA90073BAF4 /* TableViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1A02C526BA90073BAF4 /* TableViewProviderViewModel.swift */; };
+		7184D1A42C52743E0073BAF4 /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1A32C52743E0073BAF4 /* NSObject + Extensions.swift */; };
+		7184D1A72C52746E0073BAF4 /* SelfExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1A62C52746E0073BAF4 /* SelfExtractor.swift */; };
+		7184D1A92C5274B00073BAF4 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1A82C5274B00073BAF4 /* AppCore.swift */; };
+		7184D1AB2C5274C30073BAF4 /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1AA2C5274C30073BAF4 /* AppCoreContract.swift */; };
+		7184D1B02C527B1A0073BAF4 /* AppUINodeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1AF2C527B1A0073BAF4 /* AppUINodeContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +63,15 @@
 		7184D1802C5260870073BAF4 /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
 		7184D1812C5260870073BAF4 /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
 		7184D1822C5260870073BAF4 /* MainSceneViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModelContract.swift; sourceTree = "<group>"; };
+		7184D1972C5266260073BAF4 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		7184D19B2C5266750073BAF4 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		7184D19E2C526B9C0073BAF4 /* TableViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderType.swift; sourceTree = "<group>"; };
+		7184D1A02C526BA90073BAF4 /* TableViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderViewModel.swift; sourceTree = "<group>"; };
+		7184D1A32C52743E0073BAF4 /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
+		7184D1A62C52746E0073BAF4 /* SelfExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfExtractor.swift; sourceTree = "<group>"; };
+		7184D1A82C5274B00073BAF4 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		7184D1AA2C5274C30073BAF4 /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
+		7184D1AF2C527B1A0073BAF4 /* AppUINodeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUINodeContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +169,12 @@
 		7184D1682C525EB70073BAF4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7184D1A52C52744C0073BAF4 /* SelfExtractor */,
+				7184D1A22C52742E0073BAF4 /* Extensions */,
+				7184D1992C5266410073BAF4 /* Providers */,
 				7184D1712C52604B0073BAF4 /* BaseViewController.swift */,
 				7184D1732C5260660073BAF4 /* BaseInteractable.swift */,
+				7184D1972C5266260073BAF4 /* NibLoadableView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -184,6 +206,9 @@
 		7184D16E2C525FA90073BAF4 /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
+				7184D1AC2C527AED0073BAF4 /* Nodes */,
+				7184D1A82C5274B00073BAF4 /* AppCore.swift */,
+				7184D1AA2C5274C30073BAF4 /* AppCoreContract.swift */,
 			);
 			path = AppCore;
 			sourceTree = "<group>";
@@ -264,6 +289,64 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		7184D1992C5266410073BAF4 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				7184D19A2C52665D0073BAF4 /* TableViewProvider */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		7184D19A2C52665D0073BAF4 /* TableViewProvider */ = {
+			isa = PBXGroup;
+			children = (
+				7184D19D2C526B7E0073BAF4 /* Protocols */,
+				7184D19B2C5266750073BAF4 /* TableViewProvider.swift */,
+			);
+			path = TableViewProvider;
+			sourceTree = "<group>";
+		};
+		7184D19D2C526B7E0073BAF4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7184D19E2C526B9C0073BAF4 /* TableViewProviderType.swift */,
+				7184D1A02C526BA90073BAF4 /* TableViewProviderViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7184D1A22C52742E0073BAF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7184D1A32C52743E0073BAF4 /* NSObject + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7184D1A52C52744C0073BAF4 /* SelfExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				7184D1A62C52746E0073BAF4 /* SelfExtractor.swift */,
+			);
+			path = SelfExtractor;
+			sourceTree = "<group>";
+		};
+		7184D1AC2C527AED0073BAF4 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				7184D1AE2C527B050073BAF4 /* UI */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		7184D1AE2C527B050073BAF4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7184D1AF2C527B1A0073BAF4 /* AppUINodeContract.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,20 +419,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7184D1722C52604B0073BAF4 /* BaseViewController.swift in Sources */,
+				7184D1B02C527B1A0073BAF4 /* AppUINodeContract.swift in Sources */,
 				7184D1562C5258540073BAF4 /* SlidableTableView.xcdatamodeld in Sources */,
 				7184D1832C5260870073BAF4 /* MainScenePresenter.swift in Sources */,
 				7184D1842C5260870073BAF4 /* MainSceneRouterContract.swift in Sources */,
+				7184D1A92C5274B00073BAF4 /* AppCore.swift in Sources */,
 				7184D1852C5260870073BAF4 /* MainSceneRouter.swift in Sources */,
 				7184D1862C5260870073BAF4 /* MainSceneViewController.swift in Sources */,
 				7184D1872C5260870073BAF4 /* MainSceneInteractor.swift in Sources */,
 				7184D1882C5260870073BAF4 /* MainSceneInteractorService.swift in Sources */,
+				7184D1A42C52743E0073BAF4 /* NSObject + Extensions.swift in Sources */,
 				7184D1892C5260870073BAF4 /* MainSceneInteractorContract.swift in Sources */,
 				7184D18A2C5260870073BAF4 /* MainSceneViewModel.swift in Sources */,
+				7184D1AB2C5274C30073BAF4 /* AppCoreContract.swift in Sources */,
+				7184D19F2C526B9C0073BAF4 /* TableViewProviderType.swift in Sources */,
 				7184D18B2C5260870073BAF4 /* MainSceneViewControllerContract.swift in Sources */,
 				7184D18C2C5260870073BAF4 /* MainScenePresenterContract.swift in Sources */,
 				7184D18D2C5260870073BAF4 /* MainScenePresenterService.swift in Sources */,
 				7184D18E2C5260870073BAF4 /* MainSceneViewModelContract.swift in Sources */,
+				7184D1982C5266260073BAF4 /* NibLoadableView.swift in Sources */,
 				7184D14C2C5258540073BAF4 /* AppDelegate.swift in Sources */,
+				7184D19C2C5266750073BAF4 /* TableViewProvider.swift in Sources */,
+				7184D1A12C526BA90073BAF4 /* TableViewProviderViewModel.swift in Sources */,
+				7184D1A72C52746E0073BAF4 /* SelfExtractor.swift in Sources */,
 				7184D16C2C525F2D0073BAF4 /* AppRouter.swift in Sources */,
 				7184D1742C5260660073BAF4 /* BaseInteractable.swift in Sources */,
 				7184D1702C5260030073BAF4 /* Logger.swift in Sources */,
