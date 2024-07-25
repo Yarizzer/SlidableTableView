@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7184D14C2C5258540073BAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D14B2C5258540073BAF4 /* AppDelegate.swift */; };
-		7184D14E2C5258540073BAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D14D2C5258540073BAF4 /* SceneDelegate.swift */; };
-		7184D1502C5258540073BAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184D14F2C5258540073BAF4 /* ViewController.swift */; };
-		7184D1532C5258540073BAF4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7184D1522C5258540073BAF4 /* Base */; };
 		7184D1562C5258540073BAF4 /* SlidableTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7184D1542C5258540073BAF4 /* SlidableTableView.xcdatamodeld */; };
 		7184D1582C5258550073BAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7184D1572C5258550073BAF4 /* Assets.xcassets */; };
 		7184D15B2C5258550073BAF4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7184D15A2C5258550073BAF4 /* Base */; };
@@ -19,9 +16,6 @@
 /* Begin PBXFileReference section */
 		7184D1482C5258540073BAF4 /* SlidableTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidableTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7184D14B2C5258540073BAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7184D14D2C5258540073BAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7184D14F2C5258540073BAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7184D1522C5258540073BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7184D1552C5258540073BAF4 /* SlidableTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlidableTableView.xcdatamodel; sourceTree = "<group>"; };
 		7184D1572C5258550073BAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7184D15A2C5258550073BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,15 +53,20 @@
 			isa = PBXGroup;
 			children = (
 				7184D14B2C5258540073BAF4 /* AppDelegate.swift */,
-				7184D14D2C5258540073BAF4 /* SceneDelegate.swift */,
-				7184D14F2C5258540073BAF4 /* ViewController.swift */,
-				7184D1512C5258540073BAF4 /* Main.storyboard */,
 				7184D1572C5258550073BAF4 /* Assets.xcassets */,
 				7184D1592C5258550073BAF4 /* LaunchScreen.storyboard */,
 				7184D15C2C5258550073BAF4 /* Info.plist */,
-				7184D1542C5258540073BAF4 /* SlidableTableView.xcdatamodeld */,
+				7184D1622C52588B0073BAF4 /* Database */,
 			);
 			path = SlidableTableView;
+			sourceTree = "<group>";
+		};
+		7184D1622C52588B0073BAF4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7184D1542C5258540073BAF4 /* SlidableTableView.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +129,6 @@
 			files = (
 				7184D1582C5258550073BAF4 /* Assets.xcassets in Resources */,
 				7184D15B2C5258550073BAF4 /* Base in Resources */,
-				7184D1532C5258540073BAF4 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7184D1502C5258540073BAF4 /* ViewController.swift in Sources */,
 				7184D1562C5258540073BAF4 /* SlidableTableView.xcdatamodeld in Sources */,
 				7184D14C2C5258540073BAF4 /* AppDelegate.swift in Sources */,
-				7184D14E2C5258540073BAF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7184D1512C5258540073BAF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7184D1522C5258540073BAF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7184D1592C5258550073BAF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,11 +287,13 @@
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlidableTableView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SlidableTableView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,11 +317,13 @@
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlidableTableView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SlidableTableView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
